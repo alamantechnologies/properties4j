@@ -25,6 +25,7 @@ package org.alamantechnologies.builder;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import org.alamantechnologies.core.TypeMismatchException;
 
 /**
  *
@@ -146,66 +147,98 @@ public interface PropertiesBuilder {
      * key - the key value of the properties entry.
      * @return
      * the saved boolean value for the given 'key'. 
+     * @throws java.io.IOException 
+     * throws java.io.IOException.
+     * @throws org.alamantechnologies.core.TypeMismatchException 
+     * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
+     * mismatches to the data type of the stored value.
      */
-    public boolean getProBoolean(String key);
+    public boolean getProBoolean(String key)throws IOException, TypeMismatchException;
 
     /**
-     * public int getProInt(String key) Retrieves the value of the provided key
+     * public int getProInt(String key)throws IOException Retrieves the value of the provided key
      * in the specified 'properties' file as int in the Java programming language.
      * @param key
      * key - the key value of the properties entry.
      * @return
      * the saved int value for the given 'key'.
+     * @throws java.io.IOException 
+     * throws java.io.IOException.
+     * @throws org.alamantechnologies.core.TypeMismatchException 
+     * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
+     * mismatches to the data type of the stored value.
      */
-    public int getProInt(String key);
+    public int getProInt(String key)throws IOException, TypeMismatchException;
 
     /**
-     * public float getProFloat(String key) Retrieves the value of the provided key
+     * public float getProFloat(String key)throws IOException Retrieves the value of the provided key
      * in the specified 'properties' file as float in the Java programming language.
      * @param key
      * key - the key value of the properties entry.
      * @return
      * the saved int value for the given 'key'.
+     * @throws java.io.IOException 
+     * throws java.io.IOException.
+     * @throws org.alamantechnologies.core.TypeMismatchException 
+     * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
+     * mismatches to the data type of the stored value.
      */
-    public float getProFloat(String key);
+    public float getProFloat(String key)throws IOException, TypeMismatchException;
 
     /**
-     * public double getProDouble(String key) Retrieves the value of the provided key
+     * public double getProDouble(String key)throws IOException Retrieves the value of the provided key
      * in the specified 'properties' file as double in the Java programming language.
      * @param key
      * key - the key value of the properties entry.
      * @return
      * the saved double value for the given 'key'.
+     * @throws java.io.IOException 
+     * throws java.io.IOException.
+     * @throws org.alamantechnologies.core.TypeMismatchException 
+     * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
+     * mismatches to the data type of the stored value.
      */
-    public double getProDouble(String key);
+    public double getProDouble(String key)throws IOException, TypeMismatchException;
 
     /**
-     * public BigDecimal getProBigDecimal(String key) Retrieves the value of the provided key
+     * public BigDecimal getProBigDecimal(String key)throws IOException Retrieves the value of the provided key
      * in the specified 'properties' file as BigDecimal in the Java programming language.
      * @param key
      * key - the key value of the properties entry.
      * @return
      * the saved BigDecimal value for the given 'key'.
+     * @throws java.io.IOException 
+     * throws java.io.IOException.
+     * @throws org.alamantechnologies.core.TypeMismatchException 
+     * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
+     * mismatches to the data type of the stored value.
      */
-    public BigDecimal getProBigDecimal(String key);
+    public BigDecimal getProBigDecimal(String key)throws IOException, TypeMismatchException;
 
     /**
-     * public char getProChar(String key) Retrieves the value of the provided key
+     * public char getProChar(String key)throws IOException Retrieves the value of the provided key
      * in the specified 'properties' file as char in the Java programming language.
      * @param key
      * key - the key value of the properties entry.
      * @return
      * the saved char value for the given 'key'.
+     * @throws java.io.IOException 
+     * throws java.io.IOException.
+     * @throws org.alamantechnologies.core.TypeMismatchException 
+     * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
+     * mismatches to the data type of the stored value.
      */
-    public char getProChar(String key);
+    public char getProChar(String key)throws IOException, TypeMismatchException;
 
     /**
-     * public String getProString(String key) Retrieves the value of the provided key
-     * in the specified 'properties' file as String in the Java porgramming language.
+     * public String getProString(String key)throws IOException Retrieves the value of the provided key
+     * in the specified 'properties' file as String in the Java programming language.
      * @param key
      * key - the key value of the properties entry.
      * @return
      * the saved String value for the given 'key'.
+     * @throws java.io.IOException 
+     * throws java.io.IOException.
      */
-    public String getProString(String key);
+    public String getProString(String key)throws IOException;
 }

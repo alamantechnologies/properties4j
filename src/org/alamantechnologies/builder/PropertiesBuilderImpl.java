@@ -25,7 +25,9 @@ package org.alamantechnologies.builder;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.regex.Pattern;
 import org.alamantechnologies.core.PropertiesCore;
+import org.alamantechnologies.core.TypeMismatchException;
 
 /**
  *
@@ -83,37 +85,93 @@ public class PropertiesBuilderImpl implements PropertiesBuilder
     }
 
     @Override
-    public boolean getProBoolean(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean getProBoolean(String key) throws IOException, TypeMismatchException{
+        String value;
+        value = PropertiesCore.getPro(key, PROPERTIES_FILE);
+        if(!(value.equalsIgnoreCase("true") || value.equalsIgnoreCase("false")))
+        {
+            throw new TypeMismatchException();
+        }
+        else
+        {
+            return Boolean.valueOf(value);
+        }
     }
 
     @Override
-    public int getProInt(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int getProInt(String key) throws IOException, TypeMismatchException{
+        String value;
+        value = PropertiesCore.getPro(key, PROPERTIES_FILE);
+        if(Pattern.matches("[0-9]+", value))
+        {
+            return Integer.parseInt(value);
+        }
+        else
+        {
+            throw new TypeMismatchException();
+        }
     }
 
     @Override
-    public float getProFloat(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public float getProFloat(String key) throws IOException, TypeMismatchException{
+        String value;
+        value = PropertiesCore.getPro(key, PROPERTIES_FILE);
+        if(Pattern.matches("[0-9.]+", value))
+        {
+            return Float.parseFloat(value);
+        }
+        else
+        {
+            throw new TypeMismatchException();
+        }
     }
 
     @Override
-    public double getProDouble(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double getProDouble(String key) throws IOException, TypeMismatchException{
+        String value;
+        value = PropertiesCore.getPro(key, PROPERTIES_FILE);
+        if(Pattern.matches("[0-9.]+", value))
+        {
+            return Double.parseDouble(value);
+        }
+        else
+        {
+            throw new TypeMismatchException();
+        }
     }
 
     @Override
-    public BigDecimal getProBigDecimal(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public BigDecimal getProBigDecimal(String key) throws IOException, TypeMismatchException{
+        String value;
+        value = PropertiesCore.getPro(key, PROPERTIES_FILE);
+        if(Pattern.matches("[0-9.]+", value))
+        {
+            return new BigDecimal(value);
+        }
+        else
+        {
+            throw new TypeMismatchException();
+        }
     }
 
     @Override
-    public char getProChar(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public char getProChar(String key) throws IOException, TypeMismatchException{
+        String value;
+        value = PropertiesCore.getPro(key, PROPERTIES_FILE);
+        if(value.length() == 1)
+        {
+            return value.charAt(0);
+        }
+        else
+        {
+            throw new TypeMismatchException();
+        }
     }
 
     @Override
-    public String getProString(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getProString(String key) throws IOException{
+        String value;
+        value = PropertiesCore.getPro(key, PROPERTIES_FILE);
+        return value;
     }
 }
