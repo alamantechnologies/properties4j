@@ -21,13 +21,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.alamantechnologies.builder;
+package org.alamantechnologies.properites4j.builder;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.regex.Pattern;
-import org.alamantechnologies.core.PropertiesCore;
-import org.alamantechnologies.core.TypeMismatchException;
+import org.alamantechnologies.properites4j.core.PropertiesCore;
+import org.alamantechnologies.properites4j.core.TypeMismatchException;
 
 /**
  *
