@@ -29,7 +29,8 @@ import org.alamantechnologies.core.TypeMismatchException;
 
 /**
  *
- * @author swala
+ * @author Swalah Amani.
+ * 
  */
 public interface PropertiesBuilder {
 

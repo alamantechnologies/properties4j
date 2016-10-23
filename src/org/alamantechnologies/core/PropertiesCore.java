@@ -31,7 +31,7 @@ import java.util.Properties;
 
 /**
  *
- * @author Swalah Amani
+ * @author Swalah Amani.
  */
 public class PropertiesCore 
 {

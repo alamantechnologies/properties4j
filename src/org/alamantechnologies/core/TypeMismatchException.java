@@ -25,7 +25,7 @@ package org.alamantechnologies.core;
 
 /**
  *
- * @author AL-AMAN TECHNOLOGIES
+ * @author Swalah Amani.
  */
 public class TypeMismatchException extends Exception
 {

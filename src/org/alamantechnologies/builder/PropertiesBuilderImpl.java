@@ -31,7 +31,7 @@ import org.alamantechnologies.core.TypeMismatchException;
 
 /**
  *
- * @author swala
+ * @author Swalah Amani.
  */
 public class PropertiesBuilderImpl implements PropertiesBuilder
 {
