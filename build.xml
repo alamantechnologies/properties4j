@@ -23,8 +23,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
 
-<project name="alaman-properites4j-0.0.1" default="default" basedir=".">
-    <description>Builds, tests, and runs the project alaman-properites4j-0.0.1.</description>
+<project name="alaman-properties4j-0.0.1" default="default" basedir=".">
+    <description>Builds, tests, and runs the project alaman-properties4j-0.0.1.</description>
     <import file="nbproject/build-impl.xml"/>
     <target name="-post-jar" description="bundle sources and javadoc in a jar" depends="javadoc">
     <jar compress="${jar.compress}" basedir="${src.dir}" jarfile="${dist.dir}/${application.title}-sources.jar"/>
@@ -79,7 +79,7 @@ THE SOFTWARE.
 
     An example of overriding the target for project execution could look like this:
 
-        <target name="run" depends="alaman-properites4j-0.0.1-impl.jar">
+        <target name="run" depends="alaman-properties4j-0.0.1-impl.jar">
             <exec dir="bin" executable="launcher.exe">
                 <arg file="${dist.jar}"/>
             </exec>

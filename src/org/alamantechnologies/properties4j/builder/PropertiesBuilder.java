@@ -21,11 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.alamantechnologies.properites4j.builder;
+package org.alamantechnologies.properties4j.builder;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import org.alamantechnologies.properites4j.core.TypeMismatchException;
+import org.alamantechnologies.properties4j.core.TypeMismatchException;
 
 /**
  *
@@ -150,7 +150,7 @@ public interface PropertiesBuilder {
      * the saved boolean value for the given 'key'. 
      * @throws java.io.IOException 
      * throws java.io.IOException.
-     * @throws org.alamantechnologies.properites4j.core.TypeMismatchException 
+     * @throws org.alamantechnologies.properties4j.core.TypeMismatchException 
      * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
      * mismatches to the data type of the stored value.
      */
@@ -165,7 +165,7 @@ public interface PropertiesBuilder {
      * the saved int value for the given 'key'.
      * @throws java.io.IOException 
      * throws java.io.IOException.
-     * @throws org.alamantechnologies.properites4j.core.TypeMismatchException 
+     * @throws org.alamantechnologies.properties4j.core.TypeMismatchException 
      * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
      * mismatches to the data type of the stored value.
      */
@@ -180,7 +180,7 @@ public interface PropertiesBuilder {
      * the saved int value for the given 'key'.
      * @throws java.io.IOException 
      * throws java.io.IOException.
-     * @throws org.alamantechnologies.properites4j.core.TypeMismatchException 
+     * @throws org.alamantechnologies.properties4j.core.TypeMismatchException 
      * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
      * mismatches to the data type of the stored value.
      */
@@ -195,7 +195,7 @@ public interface PropertiesBuilder {
      * the saved double value for the given 'key'.
      * @throws java.io.IOException 
      * throws java.io.IOException.
-     * @throws org.alamantechnologies.properites4j.core.TypeMismatchException 
+     * @throws org.alamantechnologies.properties4j.core.TypeMismatchException 
      * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
      * mismatches to the data type of the stored value.
      */
@@ -210,7 +210,7 @@ public interface PropertiesBuilder {
      * the saved BigDecimal value for the given 'key'.
      * @throws java.io.IOException 
      * throws java.io.IOException.
-     * @throws org.alamantechnologies.properites4j.core.TypeMismatchException 
+     * @throws org.alamantechnologies.properties4j.core.TypeMismatchException 
      * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
      * mismatches to the data type of the stored value.
      */
@@ -225,7 +225,7 @@ public interface PropertiesBuilder {
      * the saved char value for the given 'key'.
      * @throws java.io.IOException 
      * throws java.io.IOException.
-     * @throws org.alamantechnologies.properites4j.core.TypeMismatchException 
+     * @throws org.alamantechnologies.properties4j.core.TypeMismatchException 
      * throws org.alamantechnologies.core.TypeMismatchException when the data type of the requested value
      * mismatches to the data type of the stored value.
      */

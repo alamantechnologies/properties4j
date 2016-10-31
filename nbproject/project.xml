@@ -26,7 +26,7 @@ THE SOFTWARE.
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>properites4j</name>
+            <name>properties4j</name>
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>
